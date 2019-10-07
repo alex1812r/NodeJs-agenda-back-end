@@ -1,17 +1,8 @@
 const express = require('express')
 const morgan = require('morgan')
-const mongoose = require('mongoose')
+const db = require('./database')
 //crear aplicacion
 const app = express()
-
-//Conectar con la base de datos
-mongoose.connect('mongodb://localhost/test')
-  .then( db => {
-    console.log('Conectado a la Base de Datos')
-  })
-  .catch( error => {
-    console.log('error: ', error)
-  })
 
 //SETTINGS
 app.set('port', process.env.PORT || 3000) //puerto de la aplicacion
