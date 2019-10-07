@@ -5,7 +5,7 @@ const db = require('./database')
 const app = express()
 
 //SETTINGS
-app.set('port', process.env.PORT || 3000) //puerto de la aplicacion
+app.set('port', process.env.PORT || 5000) //puerto de la aplicacion
 
 //MIDLEWARES(
 app.use(morgan('dev')) //ver peticiones por consola
