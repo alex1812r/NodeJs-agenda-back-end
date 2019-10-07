@@ -11,7 +11,7 @@ app.set('port', process.env.PORT || 3000) //puerto de la aplicacion
 app.use(morgan('dev')) //ver peticiones por consola
 app.use(express.json()) //aceptar peticiones tipo json
 //ROUTER
-app.use('/api/agenda',require('./routes/Agenda')) //rutas de la aplicacion
+app.use('/',require('./routes/Agenda')) //rutas de la aplicacion
 
 
 //SERVER LISTENING
