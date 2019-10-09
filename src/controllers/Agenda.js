@@ -50,7 +50,7 @@ exports.delete = async (req,res) => {
       return res.json({Ok:false, error: 'error al eliminar contacto'})
     }
   })
-  res.json({ status: 'Contacto eliminado' })
+  res.json({ Ok: true, mensaje: 'Contacto eliminado' })
 }
 
 exports.update = async (req,res) => {
