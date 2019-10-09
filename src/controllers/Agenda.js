@@ -11,7 +11,7 @@ exports.get = async (req,res) => {
       return res.json({error: 'Error al buscar contacto'})
     }
   }).limit(1)
-  res.json(contacto)
+  res.json({Ok: true, contacto})
 }
 
 exports.create = async(req,res) => {
